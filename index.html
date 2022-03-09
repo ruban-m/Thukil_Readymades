@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="./css/style.navbar.css"/>
     <link rel="stylesheet" href="./css/style.animation.css"/>
     <link rel="stylesheet" href="./css/style.slideshow.css"/>
-    <link rel="stylesheet" href="./css/style.trending.css"/>
+    <link rel="stylesheet" href="./css/style.slider.css" />
     <link rel="stylesheet" href="./css/style.collection.css"/>
     <link rel="stylesheet" href="./css/style.contact.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
     <script src="./js/script.js"></script>
+    <script src="./js/trending.js"></script>
   </head>
-  <body>
+  <body onload="loadDoc()">
     <!-- navigation bar -->
     <div class="navbar">
       <h1>Thukil <img src="./icons/needle.png" /> Readymades</h1>
@@ -137,97 +138,24 @@
     </div>
 
     <!-- trending -->
-    <div class="scroller">
-      <div class="box">
-        <div class="image">
-          <img src="./trending/1.jpg" alt="1" />
-        </div>
-        <div class="d-box">
-          <div class="type">
-            <h4>rabbed cardigan</h4>
-            <span>New arrival</span>
-          </div>
-          <h4>RS:300</h4>
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="./trending/1.jpg" alt="1" />
-        </div>
-        <div class="d-box">
-          <div class="type">
-            <h4>rabbed cardigan</h4>
-            <span>New arrival</span>
-          </div>
-          <h4>RS:300</h4>
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="./trending/1.jpg" alt="1" />
-        </div>
-        <div class="d-box">
-          <div class="type">
-            <h4>rabbed cardigan</h4>
-            <span>New arrival</span>
-          </div>
-          <h4>RS:300</h4>
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="./trending/1.jpg" alt="1" />
-        </div>
-        <div class="d-box">
-          <div class="type">
-            <h4>rabbed cardigan</h4>
-            <span>New arrival</span>
-          </div>
-          <h4>RS:300</h4>
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="./trending/1.jpg" alt="1" />
-        </div>
-        <div class="d-box">
-          <div class="type">
-            <h4>rabbed cardigan</h4>
-            <span>New arrival</span>
-          </div>
-          <h4>RS:300</h4>
-        </div>
-      </div>
-      <div class="box">
-        <div class="image">
-          <img src="./trending/1.jpg" alt="1" />
-        </div>
-        <div class="d-box">
-          <div class="type">
-            <h4>rabbed cardigan</h4>
-            <span>New arrival</span>
-          </div>
-          <h4>RS:300</h4>
-        </div>
-      </div>
-    </div>
+    <div id="page"></div>
 
     <!-- collection -->
     <div class="collection">
       <div class="dress">
-        <a href="./womens.html"><img src="./collection-images/women.jpg" /></a>
+        <a href="./womens.html"><img src="./images/collection-images/women.jpg" /></a>
         <div class="text">
           <h2>Womens Collections <i class="bi bi-box-arrow-right"></i></h2>
         </div>
       </div>
       <div class="dress">
-        <a href="./mens.html"><img src="./collection-images/men.jpg" /></a>
+        <a href="./mens.html"><img src="./images/collection-images/men.jpg" /></a>
         <div class="text">
           <h2>Mens Collections <i class="bi bi-box-arrow-right"></i></h2>
         </div>
       </div>
       <div class="dress">
-        <a href="./kids.html"><img src="./collection-images/kids.jpg" /></a>
+        <a href="./kids.html"><img src="./images/collection-images/kids.jpg" /></a>
         <div class="text">
           <h2>Kids Collections <i class="bi bi-box-arrow-right"></i></h2>
         </div>

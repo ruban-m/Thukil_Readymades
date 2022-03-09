@@ -1,6 +1,12 @@
-.scroller {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.set h1 {
+  width: auto;
+  text-align: center;
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.set .scroller {
   padding: 10px;
   display: grid;
   grid-auto-flow: column;
@@ -9,36 +15,35 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
-.scroller::-webkit-scrollbar {
+.set .scroller::-webkit-scrollbar {
   width: 10px;
   height: 0px;
 }
-.scroller::-webkit-scrollbar-thumb {
+.set .scroller::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 10px;
 }
-.scroller::-webkit-scrollbar-track {
+.set .scroller::-webkit-scrollbar-track {
   background: transparent;
 }
-.box {
+.set .scroller .box {
   width: 300px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 10px;
 }
-.image {
-  height: 450px;
+.set .scroller .image {
   position: relative;
 }
 
-.image img {
+.set .scroller .image img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   box-sizing: border-box;
 }
-.d-box {
+.set .scroller .d-box {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -47,17 +52,17 @@
   box-sizing: border-box;
   background: white;
 }
-.type {
+.set .scroller .d-box .type {
   display: flex;
   flex-direction: column;
 }
-.type h4 {
+.set .scroller .d-box .type h4 {
   color: #222222;
   margin: 5px 0px;
   font-weight: 700;
   letter-spacing: 0.5px;
   padding-right: 8px;
 }
-.type span {
+.set .scroller .d-box .type span {
   color: rgba(26, 26, 26, 0.5);
 }

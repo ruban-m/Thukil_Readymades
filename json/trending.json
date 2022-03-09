@@ -1,0 +1,66 @@
+[
+  {
+    "column": [
+      {
+        "title": "Trending collection",
+        "height": "450px"
+      },
+      {
+        "item_no": 1,
+        "img_path": "./images/trending/1.jpg",
+        "item_name": "Shirt",
+        "description": "New arrival",
+        "price": "300"
+      },
+      {
+        "item_no": 2,
+        "img_path": "./images/trending/1.jpg",
+        "item_name": "Shirt",
+        "description": "New arrival",
+        "price": "350"
+      },
+      {
+        "item_no": 3,
+        "img_path": "./images/trending/1.jpg",
+        "item_name": "Shirt",
+        "description": "New arrival",
+        "price": "400"
+      },
+      {
+        "item_no": 4,
+        "img_path": "./images/trending/1.jpg",
+        "item_name": "Shirt",
+        "description": "New arrival",
+        "price": "450"
+      },
+      {
+        "item_no": 5,
+        "img_path": "./images/trending/1.jpg",
+        "item_name": "Shirt",
+        "description": "New arrival",
+        "price": "500"
+      },
+      {
+        "item_no": 6,
+        "img_path": "./images/trending/1.jpg",
+        "item_name": "Shirt",
+        "description": "New arrival",
+        "price": "500"
+      },
+      {
+        "item_no": 7,
+        "img_path": "./images/trending/1.jpg",
+        "item_name": "Shirt",
+        "description": "New arrival",
+        "price": "500"
+      },
+      {
+        "item_no": 8,
+        "img_path": "./images/trending/1.jpg",
+        "item_name": "tshirt",
+        "description": "New arrival",
+        "price": "100"
+      }
+    ]
+  }
+]
