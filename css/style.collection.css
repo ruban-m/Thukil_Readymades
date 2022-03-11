@@ -11,7 +11,7 @@
   border: 2px solid white;
   border-radius: 4px;
   position: relative;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .collection .dress img {
   width: 100%;
