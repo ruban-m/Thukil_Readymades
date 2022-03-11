@@ -16,7 +16,7 @@
   color: #f37b20;
 }
 .contact .details h1 {
-  color: #f5576c;
+  color: #bb3d6e;
 }
 .contact .details a {
   text-decoration: none;
@@ -24,7 +24,7 @@
 }
 .contact .details p {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 00;
   color: #202124;
 }
 .contact .details a:hover {
