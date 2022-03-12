@@ -2,20 +2,25 @@ function whatsapp() {
   window.location = 'https://wa.me/+919787434087'
 }
 // slideshow
-let shttp = new XMLHttpRequest()
-shttp.open('GET', './json/slide.json', false)
-shttp.onreadystatechange = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    let s = JSON.parse(this.responseText)
-    let i = 0
-    setInterval(() => {
-      if (i < s.length) {
-        document.slider.src = s[i]['path']
-        i++
-      } else {
-        i = 0
+$(document).ready(function () {
+  let shttp = new XMLHttpRequest()
+  shttp.open('GET', './json/slide.json', false)
+  shttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      let s = JSON.parse(this.responseText)
+      let img = ''
+      for (let i = 0; i < s.length; i++) {
+        img += '<img src="' + s[i]['path'] + '" alt="image"></img>'
       }
-    }, 4000)
+      document.getElementById('slideshow').innerHTML = img
+    }
   }
-}
-shttp.send()
+  shttp.send()
+})
+
+// jQuery
+$('#slideshow > img:gt(0)').hide()
+
+setInterval(function () {
+  $('#slideshow > img:first').fadeOut('slow').next().fadeIn('slow').end().appendTo('#slideshow')
+}, 4000)
